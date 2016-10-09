@@ -1,0 +1,17 @@
+{
+  "version": "1",
+  "data": {
+    "classes": [
+      {
+        "id": "barbarian",
+        "hitDice": 12,
+        "maxLevel": 20
+      },
+      {
+        "id": "bard",
+        "hitDice": 8,
+        "maxLevel": 20
+      }
+    ]
+  }
+}
