@@ -36,7 +36,7 @@ public class JsonDataParser {
     return readData(source, SrdClass.Holder.class).getClasses();
   }
 
-  private <T> T readData(ByteSource source, Class<T> classOfT) throws IOException {
+  <T> T readData(ByteSource source, Class<T> classOfT) throws IOException {
     JsonObject root;
     try (Reader reader = source.asCharSource(UTF_8).openStream()) {
       root = parser.parse(reader).getAsJsonObject();
